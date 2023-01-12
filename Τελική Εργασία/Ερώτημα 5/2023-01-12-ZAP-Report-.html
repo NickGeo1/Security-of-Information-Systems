@@ -1,0 +1,3875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZAP Scanning Report</title>
+<link
+	href="2023-01-12-ZAP-Report-/normalize/normalize.css" rel="stylesheet">
+<link
+	href="2023-01-12-ZAP-Report-/themes/original/main.css" rel="stylesheet">
+<link
+	href="2023-01-12-ZAP-Report-/themes/original/colors.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>ZAP Scanning Report</h1>
+		<p>
+			<span>Generated with</span> <a href="https://zaproxy.org"><img
+				src="2023-01-12-ZAP-Report-/zap32x32.png" alt="The ZAP logo" class="zap-logo">ZAP</a>
+			<span>on Thu 12 Jan 2023, at 17:41:20</span>
+		</p>
+	</header>
+
+	<main>
+
+		<section id="contents" class="contents">
+			<h2>Contents</h2>
+			<nav>
+				<ol>
+					<li><a
+						href="#about-this-report">About this report</a>
+						<ol>
+							
+							<li><a
+								href="#report-parameters">Report parameters</a></li>
+						</ol></li>
+					<data-th-block>
+					<li><a
+						href="#summaries">Summaries</a>
+						<ol>
+							<li><a
+								href="#risk-confidence-counts">Alert counts by risk and confidence</a></li>
+							<li><a
+								href="#site-risk-counts">Alert counts by site and risk</a></li>
+							<li><a
+								href="#alert-type-counts">Alert counts by alert type</a></li>
+						</ol></li>
+					<li><a
+						href="#alerts">Alerts</a>
+						<ol>
+							
+							 
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-2-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Medium</span>, <span>Confidence</span>=<span
+									class="confidence-level">High</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-2-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Medium</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-2-confidence-1"><span>Risk</span>=<span
+									class="risk-level">Medium</span>, <span>Confidence</span>=<span
+									class="confidence-level">Low</span> <span>(1)</span></a></li>
+							  
+							
+							
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-1-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Low</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(4)</span></a></li>
+							
+							
+							  
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-0-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Informational</span>, <span>Confidence</span>=<span
+									class="confidence-level">High</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-0-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Informational</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-0-confidence-1"><span>Risk</span>=<span
+									class="risk-level">Informational</span>, <span>Confidence</span>=<span
+									class="confidence-level">Low</span> <span>(3)</span></a></li>
+							  
+						</ol></li>
+					<li><a
+						href="#appendix">Appendix</a>
+						<ol>
+							<li><a
+								href="#alert-types">Alert types</a></li>
+						</ol></li>
+					</data-th-block>
+				</ol>
+			</nav>
+		</section>
+
+		<section
+			id="about-this-report" class="about-this-report">
+			<h2>About this report</h2>
+
+			
+
+			<section
+				id="report-parameters">
+				<h3>Report parameters</h3>
+				<div class="report-parameters--container">
+					<h4>Contexts</h4>
+					
+					
+					<p>No contexts were selected, so all contexts were included by default.</p>
+					  
+
+					<h4>Sites</h4>
+					
+					<p>The following sites were included:</p>
+					<ul class="sites-list">
+						<li><span class="site">http://localhost:8080</span></li>
+					</ul>
+					
+					<p>(If no sites were selected, all sites were included by default.)</p>
+					<p>An included site must also be within one of the included contexts for its data to be included in the report.</p>
+
+					<h4>Risk levels</h4>
+					<p>
+						<span>Included</span>:
+						 
+						<span class="included-risk-codes"><span class="risk-level">High</span>, <span class="risk-level">Medium</span>, <span class="risk-level">Low</span>, <span class="risk-level">Informational</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						 <span>None</span>
+						
+					</p>
+
+					<h4>Confidence levels</h4>
+					<p>
+						<span>Included</span>:
+						
+						
+						<span class="included-confidence-codes"><span class="confidence-level">User Confirmed</span>, <span class="confidence-level">High</span>, <span class="confidence-level">Medium</span>, <span class="confidence-level">Low</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						
+						
+						<span class="included-confidence-codes"> <span class="confidence-level">User Confirmed</span>, <span class="confidence-level">High</span>, <span class="confidence-level">Medium</span>, <span class="confidence-level">Low</span>, <span class="confidence-level">False Positive</span></span>
+					</p>
+				</div>
+			</section>
+		</section>
+
+		
+		<section>
+			
+		</section>
+		
+		<section id="summaries" class="summaries">
+			<h2>Summaries</h2>
+
+			<section
+				id="risk-confidence-counts">
+				<h3>Alert counts by risk and confidence</h3>
+				<table class="risk-confidence-counts-table">
+					<caption>
+						<p>This table shows the number of alerts for each level of risk and confidence included in the report.</p>
+						<p>(The percentages in brackets represent the count as a percentage of the total number of alerts included in the report, rounded to one decimal place.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%">
+						<col style="width: 14.0%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup"
+								colspan="5">Confidence</th>
+						</tr>
+						<tr>
+							<th scope="col">User Confirmed</th>
+							<th scope="col">High</th>
+							<th scope="col">Medium</th>
+							<th scope="col">Low</th>
+							<th scope="col">Total</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="5">Risk</th>
+							<th scope="row">High</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0.0%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Medium</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(8.3%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(8.3%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(8.3%)</span></td>
+							<td><span>3</span><br> <span class="additional-info-percentages">(25.0%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Low</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(33.3%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>4</span><br> <span class="additional-info-percentages">(33.3%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Informational</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(8.3%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(8.3%)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(25.0%)</span></td>
+							<td><span>5</span><br> <span class="additional-info-percentages">(41.7%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row">Total</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(16.7%)</span></td>
+							<td><span>6</span><br> <span
+								class="additional-info-percentages">(50.0%)</span></td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(33.3%)</span></td>
+							<td><span>12</span><br> <span
+								class="additional-info-percentages">(100%)</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="site-risk-counts">
+				<h3>Alert counts by site and risk</h3>
+				<table class="site-risk-counts-table">
+					<caption>
+						<p>This table shows, for each site for which one or more alerts were raised, the number of alerts raised at each risk level.</p>
+						<p>Alerts with a confidence level of &quot;False Positive&quot; have been excluded from these counts.</p>
+						<p>(The numbers in brackets are the number of alerts raised for the site at or above that risk level.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup" colspan="4">Risk</th>
+						</tr>
+						<tr>
+							<th scope="col">
+								<span>High</span><br>  <span
+									class="additional-info-percentages">(= High)</span>  
+							</th>
+							<th scope="col">
+								<span>Medium</span><br>   <span
+									class="additional-info-percentages">(&gt;= Medium)</span> 
+							</th>
+							<th scope="col">
+								<span>Low</span><br>   <span
+									class="additional-info-percentages">(&gt;= Low)</span> 
+							</th>
+							<th scope="col">
+								<span>Informational</span><br>   <span
+									class="additional-info-percentages">(&gt;= Informational)</span> 
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="1">Site</th>
+							<th scope="row">http://localhost:8080</th>
+							
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(3)</span></td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(7)</span></td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(12)</span></td>
+							
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="alert-type-counts">
+				<h3>Alert counts by alert type</h3>
+				<table class="alert-type-counts-table">
+					<caption>
+						<p>This table shows the number of alerts of each alert type, together with the alert type&#39;s risk level.</p>
+						<p>(The percentages in brackets represent each count as a percentage, rounded to one decimal place, of the total number of alerts included in this report.)</p>
+					</caption>
+					<thead>
+						<tr>
+							<th scope="col">Alert type</th>
+							<th scope="col">Risk</th>
+							<th scope="col">Count</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-0">Absence of Anti-CSRF Tokens</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(33.3%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-1">Content Security Policy (CSP) Header Not Set</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>7</span><br> <span
+								class="additional-info-percentages">(58.3%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-2">Missing Anti-clickjacking Header</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(33.3%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-3">Application Error Disclosure</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(8.3%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-4">Cookie without SameSite Attribute</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(8.3%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-5">Information Disclosure - Debug Error Messages</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(8.3%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-6">X-Content-Type-Options Header Missing</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(41.7%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-7">GET for POST</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(8.3%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-8">Information Disclosure - Suspicious Comments</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(41.7%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-9">Loosely Scoped Cookie</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(8.3%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-10">User Agent Fuzzer</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>24</span><br> <span
+								class="additional-info-percentages">(200.0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-11">User Controllable HTML Element Attribute (Potential XSS)</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>11</span><br> <span
+								class="additional-info-percentages">(91.7%)</span></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th scope="row">Total</th>
+							<td></td>
+							<td>12</td>
+						</tr>
+					</tfoot>
+				</table>
+			</section>
+		</section>
+
+		<section id="alerts" class="alerts">
+			<h2>Alerts</h2>
+			<ol>
+				
+				 
+				 
+				
+				
+				<li id="alerts--risk-2-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medium</span>, <span>Confidence</span>=<span
+							class="confidence-level">High</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost:8080</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-1">Content Security Policy (CSP) Header Not Set</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost:8080/robots.txt</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (208 bytes)</summary>
+				
+				<pre><code>GET http://localhost:8080/robots.txt HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:105.0) Gecko/20100101 Firefox/105.0
+Pragma: no-cache
+Cache-Control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (135 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 404
+Content-Type: text/html;charset=utf-8
+Content-Language: en
+Content-Length: 682
+Date: Thu, 12 Jan 2023 15:40:02 GMT
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (682 bytes)</summary>
+				
+				<pre><code>&lt;!doctype html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;title&gt;HTTP Status 404 – Not Found&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 – Not Found&lt;/h1&gt;&lt;hr class=&quot;line&quot; /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Status Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.&lt;/p&gt;&lt;hr class=&quot;line&quot; /&gt;&lt;h3&gt;Apache Tomcat/8.5.81&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header, to achieve optimal browser support: &quot;Content-Security-Policy&quot; for Chrome 25+, Firefox 23+ and Safari 7+, &quot;X-Content-Security-Policy&quot; for Firefox 4.0+ and Internet Explorer 10+, and &quot;X-WebKit-CSP&quot; for Chrome 14+ and Safari 6+.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-2-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medium</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost:8080</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-2">Missing Anti-clickjacking Header</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost:8080/Ergasia2_war/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/11-Client-side_Testing/09-Testing_for_Clickjacking">WSTG-v42-CLNT-09</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The response does not include either Content-Security-Policy with &#39;frame-ancestors&#39; directive or X-Frame-Options to protect against &#39;ClickJacking&#39; attacks.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (211 bytes)</summary>
+				
+				<pre><code>GET http://localhost:8080/Ergasia2_war/ HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:105.0) Gecko/20100101 Firefox/105.0
+Pragma: no-cache
+Cache-Control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (198 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200
+Accept-Ranges: bytes
+ETag: W/&quot;2599-1672152724000&quot;
+Last-Modified: Tue, 27 Dec 2022 14:52:04 GMT
+Content-Type: text/html
+Content-Length: 2599
+Date: Thu, 12 Jan 2023 15:40:02 GMT
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (2599 bytes)</summary>
+				
+				<pre><code>&lt;!-- This is the start page of the web application --&gt;
+&lt;!DOCTYPE html&gt;
+
+&lt;html lang=&quot;en&quot;&gt;
+
+    &lt;head&gt;
+
+        &lt;title&gt;Doctor appointments: homepage&lt;/title&gt;
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+
+        &lt;style&gt;
+
+            /* set border and background colour to the form */
+            form
+            {
+                border: 3px solid whitesmoke;
+                background-color: white ;
+            }
+
+            /* the whole page has the same font */
+            *
+            {
+                font-family:candara;
+            }
+
+            /* style rules for the body of the page */
+            body
+            {
+                background-color: seagreen;
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+            }
+
+            /* set a style for the hyperlinks  */
+            a
+            {
+                background-color: #012A6C;
+                color: white;
+                padding: 10px 18px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: auto;
+            }
+
+            /* set a hover effect for the button */
+            button:hover
+            {
+                opacity: 0.8;
+            }
+
+            /* centre the display image inside the container */
+            .imgcontainer
+            {
+                text-align: center;
+                margin: 24px 0 12px 0;
+            }
+
+            /* set image properties */
+            img.avatar
+            {
+                width: 16%;
+                border-radius: 70%;
+            }
+
+            /* set padding to the container */
+            .container
+            {
+                padding: 16px;
+            }
+
+        &lt;/style&gt;
+
+    &lt;/head&gt;
+
+    &lt;body&gt;
+
+        &lt;form&gt;
+
+            &lt;div class=&quot;imgcontainer&quot;&gt;
+                &lt;img src=&quot;img/logo1.png&quot; alt=&quot;logo_image&quot; class=&quot;avatar&quot;&gt;
+            &lt;/div&gt;
+
+            &lt;br&gt;
+
+            &lt;div class=&quot;container&quot;&gt;
+                &lt;label&gt;&lt;b style=&quot;color:#012A6C&quot;&gt;Welcome to the online doctor&#39;s appointment application! &lt;br&gt;&lt;br&gt;&lt;br&gt; Please select what do you want to do:&lt;/b&gt;&lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;container&quot;&gt;
+                &lt;center&gt;&lt;pre&gt;&lt;a href=&quot;login.jsp&quot;&gt;Login&lt;/a&gt;            &lt;a href=&quot;register.jsp&quot;&gt;Register&lt;/a&gt;&lt;/pre&gt;&lt;/center&gt;
+            &lt;/div&gt;
+
+        &lt;/form&gt;
+
+        &lt;br&gt;
+    &lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>X-Frame-Options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p>
+
+<p>If you expect the page to be framed only by pages on your server (e.g. it&#39;s part of a FRAMESET) then you&#39;ll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy&#39;s &quot;frame-ancestors&quot; directive.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-2-confidence-1">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medium</span>, <span>Confidence</span>=<span
+							class="confidence-level">Low</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost:8080</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-0">Absence of Anti-CSRF Tokens</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost:8080/Ergasia2_war/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/05-Testing_for_Cross_Site_Request_Forgery">WSTG-v42-SESS-05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A5_2017-Broken_Access_Control.html">OWASP_2017_A05</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>No Anti-CSRF tokens were found in a HTML submission form.</p>
+
+<p>A cross-site request forgery is an attack that involves forcing a victim to send an HTTP request to a target destination without their knowledge or intent in order to perform an action as the victim. The underlying cause is application functionality using predictable URL/form actions in a repeatable way. The nature of the attack is that CSRF exploits the trust that a web site has for a user. By contrast, cross-site scripting (XSS) exploits the trust that a user has for a web site. Like XSS, CSRF attacks are not necessarily cross-site, but they can be. Cross-site request forgery is also known as CSRF, XSRF, one-click attack, session riding, confused deputy, and sea surf.</p>
+
+<p>CSRF attacks are effective in a number of situations, including:</p>
+
+<p>    * The victim has an active session on the target site.</p>
+
+<p>    * The victim is authenticated via HTTP auth on the target site.</p>
+
+<p>    * The victim is on the same local network as the target site.</p>
+
+<p>CSRF has primarily been used to perform an action against a target site using the victim&#39;s privileges, but recent techniques have been discovered to disclose information by gaining access to the response. The risk of information disclosure is dramatically increased when the target site is vulnerable to XSS, because XSS can be used as a platform for CSRF, allowing the attack to operate within the bounds of the same-origin policy.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: &quot;&quot; ].</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (211 bytes)</summary>
+				
+				<pre><code>GET http://localhost:8080/Ergasia2_war/ HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:105.0) Gecko/20100101 Firefox/105.0
+Pragma: no-cache
+Cache-Control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (198 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200
+Accept-Ranges: bytes
+ETag: W/&quot;2599-1672152724000&quot;
+Last-Modified: Tue, 27 Dec 2022 14:52:04 GMT
+Content-Type: text/html
+Content-Length: 2599
+Date: Thu, 12 Jan 2023 15:40:02 GMT
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (2599 bytes)</summary>
+				
+				<pre><code>&lt;!-- This is the start page of the web application --&gt;
+&lt;!DOCTYPE html&gt;
+
+&lt;html lang=&quot;en&quot;&gt;
+
+    &lt;head&gt;
+
+        &lt;title&gt;Doctor appointments: homepage&lt;/title&gt;
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+
+        &lt;style&gt;
+
+            /* set border and background colour to the form */
+            form
+            {
+                border: 3px solid whitesmoke;
+                background-color: white ;
+            }
+
+            /* the whole page has the same font */
+            *
+            {
+                font-family:candara;
+            }
+
+            /* style rules for the body of the page */
+            body
+            {
+                background-color: seagreen;
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+            }
+
+            /* set a style for the hyperlinks  */
+            a
+            {
+                background-color: #012A6C;
+                color: white;
+                padding: 10px 18px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: auto;
+            }
+
+            /* set a hover effect for the button */
+            button:hover
+            {
+                opacity: 0.8;
+            }
+
+            /* centre the display image inside the container */
+            .imgcontainer
+            {
+                text-align: center;
+                margin: 24px 0 12px 0;
+            }
+
+            /* set image properties */
+            img.avatar
+            {
+                width: 16%;
+                border-radius: 70%;
+            }
+
+            /* set padding to the container */
+            .container
+            {
+                padding: 16px;
+            }
+
+        &lt;/style&gt;
+
+    &lt;/head&gt;
+
+    &lt;body&gt;
+
+        &lt;form&gt;
+
+            &lt;div class=&quot;imgcontainer&quot;&gt;
+                &lt;img src=&quot;img/logo1.png&quot; alt=&quot;logo_image&quot; class=&quot;avatar&quot;&gt;
+            &lt;/div&gt;
+
+            &lt;br&gt;
+
+            &lt;div class=&quot;container&quot;&gt;
+                &lt;label&gt;&lt;b style=&quot;color:#012A6C&quot;&gt;Welcome to the online doctor&#39;s appointment application! &lt;br&gt;&lt;br&gt;&lt;br&gt; Please select what do you want to do:&lt;/b&gt;&lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;container&quot;&gt;
+                &lt;center&gt;&lt;pre&gt;&lt;a href=&quot;login.jsp&quot;&gt;Login&lt;/a&gt;            &lt;a href=&quot;register.jsp&quot;&gt;Register&lt;/a&gt;&lt;/pre&gt;&lt;/center&gt;
+            &lt;/div&gt;
+
+        &lt;/form&gt;
+
+        &lt;br&gt;
+    &lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>&lt;form&gt;</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Phase: Architecture and Design</p>
+
+<p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</p>
+
+<p>For example, use anti-CSRF packages such as the OWASP CSRFGuard.</p>
+
+<p>Phase: Implementation</p>
+
+<p>Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.</p>
+
+<p>Phase: Architecture and Design</p>
+
+<p>Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).</p>
+
+<p>Note that this can be bypassed using XSS.</p>
+
+<p>Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.</p>
+
+<p>Note that this can be bypassed using XSS.</p>
+
+<p>Use the ESAPI Session Management control.</p>
+
+<p>This control includes a component for CSRF.</p>
+
+<p>Do not use the GET method for any request that triggers a state change.</p>
+
+<p>Phase: Implementation</p>
+
+<p>Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				  
+				 
+				
+				
+				
+				
+				<li id="alerts--risk-1-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Low</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(4)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost:8080</span> <span>(4)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-3">Application Error Disclosure</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST http://localhost:8080/Ergasia2_war/patient</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/02-Testing_for_Stack_Traces">WSTG-v42-ERRH-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/01-Testing_For_Improper_Error_Handling">WSTG-v42-ERRH-01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>This page contains an error/warning message that may disclose sensitive information like the location of the file that produced the unhandled exception. This information can be used to launch further attacks against the web application. The alert could be a false positive if the error message is found inside a documentation page.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (399 bytes)</summary>
+				
+				<pre><code>POST http://localhost:8080/Ergasia2_war/patient HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:105.0) Gecko/20100101 Firefox/105.0
+Pragma: no-cache
+Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded
+Referer: http://localhost:8080/Ergasia2_war/register.jsp
+Content-Length: 56
+Cookie: JSESSIONID=1E0D658A245EF81F176F147902AC2639
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (56 bytes)</summary>
+				
+				<pre><code>fn=ZAP&amp;ln=ZAP&amp;username=ZAP&amp;password=ZAP&amp;age=ZAP&amp;AMKA=ZAP</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (155 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 500
+Content-Type: text/html;charset=utf-8
+Content-Language: en
+Content-Length: 1287
+Date: Thu, 12 Jan 2023 15:40:02 GMT
+Connection: close
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (1287 bytes)</summary>
+				
+				<pre><code>&lt;!doctype html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 – Internal Server Error&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 – Internal Server Error&lt;/h1&gt;&lt;hr class=&quot;line&quot; /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Cannot parse null string&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;java.lang.NumberFormatException: Cannot parse null string
+	java.base&amp;#47;java.lang.Integer.parseInt(Integer.java:630)
+	java.base&amp;#47;java.lang.Integer.parseInt(Integer.java:784)
+	com.servlets.PatientServlet.doPost(PatientServlet.java:40)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; The full stack trace of the root cause is available in the server logs.&lt;/p&gt;&lt;hr class=&quot;line&quot; /&gt;&lt;h3&gt;Apache Tomcat/8.5.81&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>HTTP/1.1 500</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Review the source code of this page. Implement custom error pages. Consider implementing a mechanism to provide a unique error reference/identifier to the client (browser) while logging the details on the server side and not exposing them to the user.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-4">Cookie without SameSite Attribute</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost:8080/Ergasia2_war/login.jsp</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes">WSTG-v42-SESS-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A5_2017-Broken_Access_Control.html">OWASP_2017_A05</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>A cookie has been set without the SameSite attribute, which means that the cookie can be sent as a result of a &#39;cross-site&#39; request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (266 bytes)</summary>
+				
+				<pre><code>GET http://localhost:8080/Ergasia2_war/login.jsp HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:105.0) Gecko/20100101 Firefox/105.0
+Pragma: no-cache
+Cache-Control: no-cache
+Referer: http://localhost:8080/Ergasia2_war/
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (201 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200
+Set-Cookie: JSESSIONID=1E0D658A245EF81F176F147902AC2639; Path=/Ergasia2_war; HttpOnly
+Content-Type: text/html;charset=UTF-8
+Content-Length: 6511
+Date: Thu, 12 Jan 2023 15:40:02 GMT
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (6511 bytes)</summary>
+				
+				<pre><code>&lt;!-- This is the sign-up page. Using this page, patients are now able to sign-up to the application. --&gt;
+
+&lt;!DOCTYPE html&gt;
+
+&lt;html lang=&quot;en&quot;&gt;
+
+    &lt;head&gt;
+
+        
+
+        &lt;h1&gt;&lt;/h1&gt; &lt;!-- Show the above initialized message --&gt;
+
+        &lt;title&gt;Doctor appointments: login&lt;/title&gt;
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+
+        &lt;style&gt;
+
+            /* style rules for the paragraph in this page */
+            p
+            {
+                color:white;
+                font-size:20px;
+                padding: 10px 18px;
+                margin: 8px 0;
+                width: auto;
+            }
+
+            /* set border and background colour to the form */
+            form
+            {
+                border: 3px solid whitesmoke;
+                background-color: white ;
+            }
+
+            /* the whole page has the same font */
+            *
+            {
+                font-family:candara;
+            }
+
+            /* style rules for the body of the page */
+            body
+            {
+                background-color: seagreen;
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+            }
+
+            /* set styles for the inputs of the login form */
+            input[type=text],
+            input[type=password]
+            {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                box-sizing: border-box;
+                border:1px solid mediumseagreen;
+            }
+
+            /* set a style for the buttons */
+            button
+            {
+                background-color: mediumseagreen;
+                color: white;
+                padding: 10px 18px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: auto;
+            }
+
+            /* set a hover effect for the button */
+            button:hover
+            {
+                opacity: 0.8;
+            }
+
+            /* set extra style for the cancel button */
+            .cancelbtn
+            {
+                width: auto;
+                padding: 10px 18px;
+                background-color: #f44336;
+            }
+
+            /* centre the display image inside the container */
+            .imgcontainer
+            {
+                text-align: center;
+                margin: 24px 0 12px 0;
+            }
+
+            /* set image properties */
+            img.avatar
+            {
+                width: 16%;
+                border-radius: 70%;
+            }
+
+            /* set padding to the container */
+            .container
+            {
+                padding: 16px;
+            }
+
+            /* set the forgot password text */
+            span.psw
+            {
+                float: right;
+                padding-top: 16px;
+            }
+
+            /* style rules for the radio buttons */
+            input[type=radio] {
+                height: 16px;
+                width: 15px;
+            }
+
+            /* set styles for span and cancel button on small screens */
+            @media screen and (max-width: 300px)
+            {
+                span.psw
+                {
+                    display: block;
+                    float: none;
+                }
+
+                .cancelbtn
+                {
+                    width: 100%;
+                }
+            }
+
+            /* style rules when hyperlinks are pressed */
+            a:visited
+            {
+                color: #012A6C;
+            }
+
+            /* style the hyperlinks in the nav section */
+            a
+            {
+                font-size:16px;
+                color: #012A6C;
+            }
+
+        &lt;/style&gt;
+
+    &lt;/head&gt;
+
+
+
+    &lt;body&gt;
+
+        &lt;form action=&quot;&quot; method=&quot;post&quot; name=&quot;login&quot; id=&quot;login&quot;&gt;
+
+            &lt;input type=&quot;hidden&quot; name=&quot;admin_action&quot; value=&quot;login&quot;&gt;
+            &lt;input type=&quot;hidden&quot; name=&quot;patient_action&quot; value=&quot;6&quot;&gt;
+            &lt;input type=&quot;hidden&quot; name=&quot;doctor_action&quot;  value=&quot;login&quot;&gt;
+
+            &lt;div class=&quot;imgcontainer&quot;&gt;
+                &lt;img src=&quot;img/logo1.png&quot; alt=&quot;logo_image&quot; class=&quot;avatar&quot;&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;container&quot;&gt;
+                &lt;label&gt;&lt;b style=&quot;color:#012A6C&quot;&gt;Username: *&lt;/b&gt;&lt;/label&gt;
+                &lt;input type=&quot;text&quot; placeholder=&quot;Enter Username&quot; name=&quot;username&quot; required&gt;
+
+                &lt;label&gt;&lt;b style=&quot;color:#012A6C&quot;&gt;Password: *&lt;/b&gt;&lt;/label&gt;
+                &lt;input type=&quot;password&quot; placeholder=&quot;Enter Password&quot; name=&quot;password&quot; required&gt;
+
+                &lt;label&gt;&lt;b style=&quot;color:#012A6C&quot;&gt;Category: *&lt;/b&gt;&lt;/label&gt;
+                &lt;input type=&quot;radio&quot; id=&quot;Admin&quot;   name=&quot;category&quot; value=&quot;Admin&quot;   required onchange=&quot;AdminAction();&quot; &gt;&lt;label for=&quot;Admin&quot;&gt;Admin&lt;/label&gt;
+                &lt;input type=&quot;radio&quot; id=&quot;Patient&quot; name=&quot;category&quot; value=&quot;Patient&quot; required onchange=&quot;PatientAction();&quot;&gt;&lt;label for=&quot;Patient&quot;&gt;Patient&lt;/label&gt;
+                &lt;input type=&quot;radio&quot; id=&quot;Doctor&quot;  name=&quot;category&quot; value=&quot;Doctor&quot;  required onchange=&quot;DoctorAction();&quot;&gt;&lt;label for=&quot;Doctor&quot;&gt;Doctor&lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;container&quot; style=&quot;background-color:#f1f1f1&quot;&gt;
+                &lt;button type=&quot;submit&quot;&gt;Login&lt;/button&gt;
+                &lt;button type=&quot;reset&quot; class=&quot;cancelbtn&quot;&gt;Reset&lt;/button&gt;
+                &lt;span class=&quot;psw&quot;&gt;Don&#39;t have an account yet? &lt;a href=&quot;register.jsp&quot;&gt;register&lt;/a&gt;&lt;/span&gt;
+            &lt;/div&gt;
+
+        &lt;/form&gt;
+
+        &lt;br&gt;
+    &lt;/body&gt;
+
+    &lt;script&gt;
+        const form = document.getElementById(&quot;login&quot;);
+
+        //functions that run after every radio button click.Depending on the radio button selected, the form action changes
+        //in order for the user to be redirected to the corresponding servlet
+        function AdminAction()
+        {
+            if (document.getElementById(&quot;Admin&quot;).checked)
+                form.action = &quot;admin&quot;;
+        }
+
+        function PatientAction()
+        {
+            if (document.getElementById(&quot;Patient&quot;).checked)
+                form.action = &quot;patient&quot;;
+        }
+
+        function DoctorAction()
+        {
+            if (document.getElementById(&quot;Doctor&quot;).checked)
+                form.action = &quot;doctor&quot;;
+        }
+    &lt;/script&gt;
+
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>JSESSIONID</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Set-Cookie: JSESSIONID</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that the SameSite attribute is set to either &#39;lax&#39; or ideally &#39;strict&#39; for all cookies.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-5">Information Disclosure - Debug Error Messages</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST http://localhost:8080/Ergasia2_war/patient</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/01-Testing_For_Improper_Error_Handling">WSTG-v42-ERRH-01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure.html">OWASP_2017_A03</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The response appeared to contain common error messages returned by platforms such as ASP.NET, and Web-servers such as IIS and Apache. You can configure the list of common debug messages.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (399 bytes)</summary>
+				
+				<pre><code>POST http://localhost:8080/Ergasia2_war/patient HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:105.0) Gecko/20100101 Firefox/105.0
+Pragma: no-cache
+Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded
+Referer: http://localhost:8080/Ergasia2_war/register.jsp
+Content-Length: 56
+Cookie: JSESSIONID=1E0D658A245EF81F176F147902AC2639
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (56 bytes)</summary>
+				
+				<pre><code>fn=ZAP&amp;ln=ZAP&amp;username=ZAP&amp;password=ZAP&amp;age=ZAP&amp;AMKA=ZAP</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (155 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 500
+Content-Type: text/html;charset=utf-8
+Content-Language: en
+Content-Length: 1287
+Date: Thu, 12 Jan 2023 15:40:02 GMT
+Connection: close
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (1287 bytes)</summary>
+				
+				<pre><code>&lt;!doctype html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 – Internal Server Error&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 – Internal Server Error&lt;/h1&gt;&lt;hr class=&quot;line&quot; /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Cannot parse null string&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;java.lang.NumberFormatException: Cannot parse null string
+	java.base&amp;#47;java.lang.Integer.parseInt(Integer.java:630)
+	java.base&amp;#47;java.lang.Integer.parseInt(Integer.java:784)
+	com.servlets.PatientServlet.doPost(PatientServlet.java:40)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; The full stack trace of the root cause is available in the server logs.&lt;/p&gt;&lt;hr class=&quot;line&quot; /&gt;&lt;h3&gt;Apache Tomcat/8.5.81&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Internal Server Error</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Disable debugging messages before pushing to production.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-6">X-Content-Type-Options Header Missing</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost:8080/Ergasia2_war/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to &#39;nosniff&#39;. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</p>
+
+<p>At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (211 bytes)</summary>
+				
+				<pre><code>GET http://localhost:8080/Ergasia2_war/ HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:105.0) Gecko/20100101 Firefox/105.0
+Pragma: no-cache
+Cache-Control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (198 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200
+Accept-Ranges: bytes
+ETag: W/&quot;2599-1672152724000&quot;
+Last-Modified: Tue, 27 Dec 2022 14:52:04 GMT
+Content-Type: text/html
+Content-Length: 2599
+Date: Thu, 12 Jan 2023 15:40:02 GMT
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (2599 bytes)</summary>
+				
+				<pre><code>&lt;!-- This is the start page of the web application --&gt;
+&lt;!DOCTYPE html&gt;
+
+&lt;html lang=&quot;en&quot;&gt;
+
+    &lt;head&gt;
+
+        &lt;title&gt;Doctor appointments: homepage&lt;/title&gt;
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+
+        &lt;style&gt;
+
+            /* set border and background colour to the form */
+            form
+            {
+                border: 3px solid whitesmoke;
+                background-color: white ;
+            }
+
+            /* the whole page has the same font */
+            *
+            {
+                font-family:candara;
+            }
+
+            /* style rules for the body of the page */
+            body
+            {
+                background-color: seagreen;
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+            }
+
+            /* set a style for the hyperlinks  */
+            a
+            {
+                background-color: #012A6C;
+                color: white;
+                padding: 10px 18px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: auto;
+            }
+
+            /* set a hover effect for the button */
+            button:hover
+            {
+                opacity: 0.8;
+            }
+
+            /* centre the display image inside the container */
+            .imgcontainer
+            {
+                text-align: center;
+                margin: 24px 0 12px 0;
+            }
+
+            /* set image properties */
+            img.avatar
+            {
+                width: 16%;
+                border-radius: 70%;
+            }
+
+            /* set padding to the container */
+            .container
+            {
+                padding: 16px;
+            }
+
+        &lt;/style&gt;
+
+    &lt;/head&gt;
+
+    &lt;body&gt;
+
+        &lt;form&gt;
+
+            &lt;div class=&quot;imgcontainer&quot;&gt;
+                &lt;img src=&quot;img/logo1.png&quot; alt=&quot;logo_image&quot; class=&quot;avatar&quot;&gt;
+            &lt;/div&gt;
+
+            &lt;br&gt;
+
+            &lt;div class=&quot;container&quot;&gt;
+                &lt;label&gt;&lt;b style=&quot;color:#012A6C&quot;&gt;Welcome to the online doctor&#39;s appointment application! &lt;br&gt;&lt;br&gt;&lt;br&gt; Please select what do you want to do:&lt;/b&gt;&lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;container&quot;&gt;
+                &lt;center&gt;&lt;pre&gt;&lt;a href=&quot;login.jsp&quot;&gt;Login&lt;/a&gt;            &lt;a href=&quot;register.jsp&quot;&gt;Register&lt;/a&gt;&lt;/pre&gt;&lt;/center&gt;
+            &lt;/div&gt;
+
+        &lt;/form&gt;
+
+        &lt;br&gt;
+    &lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>X-Content-Type-Options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to &#39;nosniff&#39; for all web pages.</p>
+
+<p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+				 
+				
+				
+				<li id="alerts--risk-0-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informational</span>, <span>Confidence</span>=<span
+							class="confidence-level">High</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost:8080</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-7">GET for POST</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost:8080/Ergasia2_war/login.jsp</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A04_2021-Insecure_Design/">OWASP_2021_A04</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/06-Test_HTTP_Methods">WSTG-v42-CONF-06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>A request that was originally observed as a POST was also accepted as a GET. This issue does not represent a security weakness unto itself, however, it may facilitate simplification of other attacks. For example if the original POST is subject to Cross-Site Scripting (XSS), then this finding may indicate that a simplified (GET based) XSS may also be possible.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (474 bytes)</summary>
+				
+				<pre><code>GET http://localhost:8080/Ergasia2_war/login.jsp?admin_action=login&amp;category=Admin&amp;doctor_action=login&amp;password=ZAP&amp;patient_action=6&amp;username=ZAP HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:105.0) Gecko/20100101 Firefox/105.0
+Pragma: no-cache
+Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded
+Referer: http://localhost:8080/Ergasia2_war/login.jsp
+Cookie: JSESSIONID=1E0D658A245EF81F176F147902AC2639
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (114 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200
+Content-Type: text/html;charset=UTF-8
+Content-Length: 6511
+Date: Thu, 12 Jan 2023 15:40:45 GMT
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (6511 bytes)</summary>
+				
+				<pre><code>&lt;!-- This is the sign-up page. Using this page, patients are now able to sign-up to the application. --&gt;
+
+&lt;!DOCTYPE html&gt;
+
+&lt;html lang=&quot;en&quot;&gt;
+
+    &lt;head&gt;
+
+        
+
+        &lt;h1&gt;&lt;/h1&gt; &lt;!-- Show the above initialized message --&gt;
+
+        &lt;title&gt;Doctor appointments: login&lt;/title&gt;
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+
+        &lt;style&gt;
+
+            /* style rules for the paragraph in this page */
+            p
+            {
+                color:white;
+                font-size:20px;
+                padding: 10px 18px;
+                margin: 8px 0;
+                width: auto;
+            }
+
+            /* set border and background colour to the form */
+            form
+            {
+                border: 3px solid whitesmoke;
+                background-color: white ;
+            }
+
+            /* the whole page has the same font */
+            *
+            {
+                font-family:candara;
+            }
+
+            /* style rules for the body of the page */
+            body
+            {
+                background-color: seagreen;
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+            }
+
+            /* set styles for the inputs of the login form */
+            input[type=text],
+            input[type=password]
+            {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                box-sizing: border-box;
+                border:1px solid mediumseagreen;
+            }
+
+            /* set a style for the buttons */
+            button
+            {
+                background-color: mediumseagreen;
+                color: white;
+                padding: 10px 18px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: auto;
+            }
+
+            /* set a hover effect for the button */
+            button:hover
+            {
+                opacity: 0.8;
+            }
+
+            /* set extra style for the cancel button */
+            .cancelbtn
+            {
+                width: auto;
+                padding: 10px 18px;
+                background-color: #f44336;
+            }
+
+            /* centre the display image inside the container */
+            .imgcontainer
+            {
+                text-align: center;
+                margin: 24px 0 12px 0;
+            }
+
+            /* set image properties */
+            img.avatar
+            {
+                width: 16%;
+                border-radius: 70%;
+            }
+
+            /* set padding to the container */
+            .container
+            {
+                padding: 16px;
+            }
+
+            /* set the forgot password text */
+            span.psw
+            {
+                float: right;
+                padding-top: 16px;
+            }
+
+            /* style rules for the radio buttons */
+            input[type=radio] {
+                height: 16px;
+                width: 15px;
+            }
+
+            /* set styles for span and cancel button on small screens */
+            @media screen and (max-width: 300px)
+            {
+                span.psw
+                {
+                    display: block;
+                    float: none;
+                }
+
+                .cancelbtn
+                {
+                    width: 100%;
+                }
+            }
+
+            /* style rules when hyperlinks are pressed */
+            a:visited
+            {
+                color: #012A6C;
+            }
+
+            /* style the hyperlinks in the nav section */
+            a
+            {
+                font-size:16px;
+                color: #012A6C;
+            }
+
+        &lt;/style&gt;
+
+    &lt;/head&gt;
+
+
+
+    &lt;body&gt;
+
+        &lt;form action=&quot;&quot; method=&quot;post&quot; name=&quot;login&quot; id=&quot;login&quot;&gt;
+
+            &lt;input type=&quot;hidden&quot; name=&quot;admin_action&quot; value=&quot;login&quot;&gt;
+            &lt;input type=&quot;hidden&quot; name=&quot;patient_action&quot; value=&quot;6&quot;&gt;
+            &lt;input type=&quot;hidden&quot; name=&quot;doctor_action&quot;  value=&quot;login&quot;&gt;
+
+            &lt;div class=&quot;imgcontainer&quot;&gt;
+                &lt;img src=&quot;img/logo1.png&quot; alt=&quot;logo_image&quot; class=&quot;avatar&quot;&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;container&quot;&gt;
+                &lt;label&gt;&lt;b style=&quot;color:#012A6C&quot;&gt;Username: *&lt;/b&gt;&lt;/label&gt;
+                &lt;input type=&quot;text&quot; placeholder=&quot;Enter Username&quot; name=&quot;username&quot; required&gt;
+
+                &lt;label&gt;&lt;b style=&quot;color:#012A6C&quot;&gt;Password: *&lt;/b&gt;&lt;/label&gt;
+                &lt;input type=&quot;password&quot; placeholder=&quot;Enter Password&quot; name=&quot;password&quot; required&gt;
+
+                &lt;label&gt;&lt;b style=&quot;color:#012A6C&quot;&gt;Category: *&lt;/b&gt;&lt;/label&gt;
+                &lt;input type=&quot;radio&quot; id=&quot;Admin&quot;   name=&quot;category&quot; value=&quot;Admin&quot;   required onchange=&quot;AdminAction();&quot; &gt;&lt;label for=&quot;Admin&quot;&gt;Admin&lt;/label&gt;
+                &lt;input type=&quot;radio&quot; id=&quot;Patient&quot; name=&quot;category&quot; value=&quot;Patient&quot; required onchange=&quot;PatientAction();&quot;&gt;&lt;label for=&quot;Patient&quot;&gt;Patient&lt;/label&gt;
+                &lt;input type=&quot;radio&quot; id=&quot;Doctor&quot;  name=&quot;category&quot; value=&quot;Doctor&quot;  required onchange=&quot;DoctorAction();&quot;&gt;&lt;label for=&quot;Doctor&quot;&gt;Doctor&lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;container&quot; style=&quot;background-color:#f1f1f1&quot;&gt;
+                &lt;button type=&quot;submit&quot;&gt;Login&lt;/button&gt;
+                &lt;button type=&quot;reset&quot; class=&quot;cancelbtn&quot;&gt;Reset&lt;/button&gt;
+                &lt;span class=&quot;psw&quot;&gt;Don&#39;t have an account yet? &lt;a href=&quot;register.jsp&quot;&gt;register&lt;/a&gt;&lt;/span&gt;
+            &lt;/div&gt;
+
+        &lt;/form&gt;
+
+        &lt;br&gt;
+    &lt;/body&gt;
+
+    &lt;script&gt;
+        const form = document.getElementById(&quot;login&quot;);
+
+        //functions that run after every radio button click.Depending on the radio button selected, the form action changes
+        //in order for the user to be redirected to the corresponding servlet
+        function AdminAction()
+        {
+            if (document.getElementById(&quot;Admin&quot;).checked)
+                form.action = &quot;admin&quot;;
+        }
+
+        function PatientAction()
+        {
+            if (document.getElementById(&quot;Patient&quot;).checked)
+                form.action = &quot;patient&quot;;
+        }
+
+        function DoctorAction()
+        {
+            if (document.getElementById(&quot;Doctor&quot;).checked)
+                form.action = &quot;doctor&quot;;
+        }
+    &lt;/script&gt;
+
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>GET http://localhost:8080/Ergasia2_war/login.jsp?admin_action=login&amp;category=Admin&amp;doctor_action=login&amp;password=ZAP&amp;patient_action=6&amp;username=ZAP HTTP/1.1</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that only POST is accepted where POST is expected.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-0-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informational</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost:8080</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-10">User Agent Fuzzer</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost:8080/Ergasia2_war</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (180 bytes)</summary>
+				
+				<pre><code>GET http://localhost:8080/Ergasia2_war HTTP/1.1
+Host: localhost:8080
+user-agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)
+Pragma: no-cache
+Cache-Control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (198 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200
+Accept-Ranges: bytes
+ETag: W/&quot;2599-1672152724000&quot;
+Last-Modified: Tue, 27 Dec 2022 14:52:04 GMT
+Content-Type: text/html
+Content-Length: 2599
+Date: Thu, 12 Jan 2023 15:40:46 GMT
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (2599 bytes)</summary>
+				
+				<pre><code>&lt;!-- This is the start page of the web application --&gt;
+&lt;!DOCTYPE html&gt;
+
+&lt;html lang=&quot;en&quot;&gt;
+
+    &lt;head&gt;
+
+        &lt;title&gt;Doctor appointments: homepage&lt;/title&gt;
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+
+        &lt;style&gt;
+
+            /* set border and background colour to the form */
+            form
+            {
+                border: 3px solid whitesmoke;
+                background-color: white ;
+            }
+
+            /* the whole page has the same font */
+            *
+            {
+                font-family:candara;
+            }
+
+            /* style rules for the body of the page */
+            body
+            {
+                background-color: seagreen;
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+            }
+
+            /* set a style for the hyperlinks  */
+            a
+            {
+                background-color: #012A6C;
+                color: white;
+                padding: 10px 18px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: auto;
+            }
+
+            /* set a hover effect for the button */
+            button:hover
+            {
+                opacity: 0.8;
+            }
+
+            /* centre the display image inside the container */
+            .imgcontainer
+            {
+                text-align: center;
+                margin: 24px 0 12px 0;
+            }
+
+            /* set image properties */
+            img.avatar
+            {
+                width: 16%;
+                border-radius: 70%;
+            }
+
+            /* set padding to the container */
+            .container
+            {
+                padding: 16px;
+            }
+
+        &lt;/style&gt;
+
+    &lt;/head&gt;
+
+    &lt;body&gt;
+
+        &lt;form&gt;
+
+            &lt;div class=&quot;imgcontainer&quot;&gt;
+                &lt;img src=&quot;img/logo1.png&quot; alt=&quot;logo_image&quot; class=&quot;avatar&quot;&gt;
+            &lt;/div&gt;
+
+            &lt;br&gt;
+
+            &lt;div class=&quot;container&quot;&gt;
+                &lt;label&gt;&lt;b style=&quot;color:#012A6C&quot;&gt;Welcome to the online doctor&#39;s appointment application! &lt;br&gt;&lt;br&gt;&lt;br&gt; Please select what do you want to do:&lt;/b&gt;&lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;container&quot;&gt;
+                &lt;center&gt;&lt;pre&gt;&lt;a href=&quot;login.jsp&quot;&gt;Login&lt;/a&gt;            &lt;a href=&quot;register.jsp&quot;&gt;Register&lt;/a&gt;&lt;/pre&gt;&lt;/center&gt;
+            &lt;/div&gt;
+
+        &lt;/form&gt;
+
+        &lt;br&gt;
+    &lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>Header User-Agent</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Attack</th>
+		<td><pre><code>Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)</code></pre></td>
+	</tr>
+	
+	
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-0-confidence-1">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informational</span>, <span>Confidence</span>=<span
+							class="confidence-level">Low</span> <span>(3)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost:8080</span> <span>(3)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-8">Information Disclosure - Suspicious Comments</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost:8080/Ergasia2_war/register.jsp</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure.html">OWASP_2017_A03</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The response appears to contain suspicious comments which may help an attacker. Note: Matches made within script blocks or files are against the entire content not only comments.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>The following pattern was used: \bUSER\b and was detected in the element starting with: &quot;&lt;script&gt;</p>
+
+<p></p>
+
+<p>            //in case form still has empty input values, hide previous error (if any)</p>
+
+<p>            function remove_e&quot;, see evidence field for the suspicious comment/snippet.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (322 bytes)</summary>
+				
+				<pre><code>GET http://localhost:8080/Ergasia2_war/register.jsp HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:105.0) Gecko/20100101 Firefox/105.0
+Pragma: no-cache
+Cache-Control: no-cache
+Referer: http://localhost:8080/Ergasia2_war/
+Cookie: JSESSIONID=1E0D658A245EF81F176F147902AC2639
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (114 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200
+Content-Type: text/html;charset=UTF-8
+Date: Thu, 12 Jan 2023 15:40:02 GMT
+Content-Length: 9994
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (9994 bytes)</summary>
+				
+				<pre><code>&lt;!-- This is the page where a patient can register to the application --&gt;
+&lt;!-- source for the html and css code: https://www.geeksforgeeks.org/html-responsive-modal-login-form/ --&gt;
+
+
+&lt;!DOCTYPE html&gt;
+
+&lt;html lang=&quot;en&quot;&gt;
+
+    &lt;head&gt;
+
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+        &lt;title&gt;Doctor appointments: register&lt;/title&gt;
+
+        &lt;style&gt;
+
+            /* set border and background colour to the form */
+            form
+            {
+                border: 3px solid whitesmoke;
+                background-color: white ;
+            }
+
+            /* the whole page has the same font */
+            *
+            {
+                font-family:candara;
+            }
+
+            /* style rules for the paragraph in this page */
+            p
+            {
+                color:white;
+                font-size:18px;
+                margin: 4px 0;
+                width: auto;
+            }
+
+            /* style rules for the body of the page */
+            body
+            {
+                background-color: seagreen;
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+            }
+
+            /* style rules for the inputs boxes in the form */
+            input[type=text],
+            input[type=password]
+            {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                box-sizing: border-box;
+                border:1px solid mediumseagreen;
+            }
+
+            /* set a style for the buttons */
+            button
+            {
+                background-color: mediumseagreen;
+                color: white;
+                padding: 10px 18px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: auto;
+            }
+
+            /* set a hover effect for the button */
+            button:hover
+            {
+                opacity: 0.8;
+            }
+
+            /* set extra style for the cancel button */
+            .cancelbtn
+            {
+                width: auto;
+                padding: 10px 18px;
+                background-color: #f44336;
+            }
+
+            /* centre the display image inside the container */
+            .imgcontainer
+            {
+                text-align: center;
+                margin: 24px 0 12px 0;
+            }
+
+            /* set image properties */
+            img.avatar
+            {
+                width: 16%;
+                border-radius: 70%;
+            }
+
+            /* set padding to the container class */
+            .container
+            {
+                padding: 16px;
+            }
+
+            /* set the forgot password text */
+            span.psw
+            {
+                float: right;
+                padding-top: 16px;
+            }
+
+            /* set styles for span and cancel button on small screens */
+            @media screen and (max-width: 300px)
+            {
+                span.psw
+                {
+                    display: block;
+                    float: none;
+                }
+
+                .cancelbtn
+                {
+                    width: 100%;
+                }
+            }
+
+            /* style rules when hyperlinks are pressed */
+            a:visited
+            {
+                color: #012A6C;
+            }
+
+            /* style the hyperlinks in the nav section */
+            a
+            {
+                font-size:16px;
+                color: #012A6C;
+            }
+
+            /* style rules for the error message box */
+            #error_message
+            {
+                background: #fe8b8e;
+                text-align: center;
+                font-size: 16px;
+                transition: all 0.5s ease;
+                width: 97%;
+                margin: 8px 0;
+                display: inline-block;
+                box-sizing: border-box;
+                color: white;
+                font-weight: bold;
+                padding: 0px;
+            }
+
+        &lt;/style&gt;
+
+    &lt;/head&gt;
+
+    &lt;body&gt;
+
+        &lt;form action=&quot;patient&quot; method=&quot;post&quot; name=&quot;signup&quot; onsubmit=&quot;return validation()&quot;&gt;
+
+            &lt;input type=&quot;hidden&quot;, value=&quot;5&quot;, name=&quot;patient_action&quot;&gt;
+
+            &lt;div class=&quot;imgcontainer&quot;&gt;
+                &lt;img src=&quot;img/logo1.png&quot; alt=&quot;logo_image&quot; class=&quot;avatar&quot;&gt;
+            &lt;/div&gt;
+
+            &lt;center&gt;&lt;div id=&quot;error_message&quot;&gt;&lt;/div&gt;&lt;/center&gt;
+
+            &lt;div class=&quot;container&quot;&gt;
+                &lt;label&gt;&lt;b style=&quot;color:#012A6C&quot;&gt;Hello patient, please create your account!&lt;/b&gt;&lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;container&quot;&gt;
+
+                &lt;label&gt;&lt;b style=&quot;color:#012A6C&quot;&gt;First name: *&lt;/b&gt;&lt;/label&gt;
+                &lt;input type=&quot;text&quot; id=&quot;fn&quot; placeholder=&quot;Enter your first name&quot; name=&quot;fn&quot; required&gt;
+
+                &lt;label&gt;&lt;b style=&quot;color:#012A6C&quot;&gt;Last name: *&lt;/b&gt;&lt;/label&gt;
+                &lt;input type=&quot;text&quot; id=&quot;ln&quot; placeholder=&quot;Enter your last name&quot; name=&quot;ln&quot; required&gt;
+
+                &lt;label&gt;&lt;b style=&quot;color:#012A6C&quot;&gt;Username: *&lt;/b&gt;&lt;/label&gt;
+                &lt;input type=&quot;text&quot; id=&quot;username&quot; placeholder=&quot;Enter username&quot; name=&quot;username&quot; required&gt;
+
+                &lt;label&gt;&lt;b style=&quot;color:#012A6C&quot;&gt;Password: *&lt;/b&gt;&lt;/label&gt;
+                &lt;input type=&quot;password&quot; id=&quot;password&quot; placeholder=&quot;Enter password&quot; name=&quot;password&quot; required&gt;
+
+                &lt;label&gt;&lt;b style=&quot;color:#012A6C&quot;&gt;Age: *&lt;/b&gt;&lt;/label&gt;
+                &lt;input type=&quot;text&quot; id=&quot;age&quot; placeholder=&quot;Enter your age&quot; name=&quot;age&quot; required&gt;
+
+                &lt;label&gt;&lt;b style=&quot;color:#012A6C&quot;&gt;AMKA: *&lt;/b&gt;&lt;/label&gt;
+                &lt;input type=&quot;text&quot; id=&quot;AMKA&quot; placeholder=&quot;Enter your AMKA number&quot; name=&quot;AMKA&quot; required&gt;
+
+            &lt;/div&gt;
+
+            &lt;div class=&quot;container&quot; style=&quot;background-color:#f1f1f1&quot;&gt;
+                &lt;button type=&quot;submit&quot; onclick=&quot;remove_err()&quot;&gt;Register&lt;/button&gt;
+                &lt;button type=&quot;reset&quot; class=&quot;cancelbtn&quot;&gt;Reset&lt;/button&gt;
+                &lt;span class=&quot;psw&quot;&gt;Already have an account? &lt;a href=&quot;login.jsp&quot;&gt;login&lt;/a&gt;&lt;/span&gt;
+            &lt;/div&gt;
+
+        &lt;/form&gt;
+
+        &lt;br&gt;
+
+        &lt;p&gt;Total Users registered: An error has occured during users counting&lt;/p&gt; &lt;!-- Get the users count from database --&gt;
+
+        &lt;script&gt;
+
+            //in case form still has empty input values, hide previous error (if any)
+            function remove_err()
+            {
+                document.getElementById(&quot;error_message&quot;).style.display = &quot;none&quot;;
+            }
+
+            // this function is used for form&#39;s validation on client&#39;s side
+            function validation()
+            {
+                // get the values of inputs that user gave in the form
+                var first_name = document.getElementById(&quot;fn&quot;).value;
+                var last_name = document.getElementById(&quot;ln&quot;).value;
+                var username = document.getElementById(&quot;username&quot;).value;
+                var password = document.getElementById(&quot;password&quot;).value;
+                var age = document.getElementById(&quot;age&quot;).value;
+                var AMKA = document.getElementById(&quot;AMKA&quot;).value;
+                var error_message = document.getElementById(&quot;error_message&quot;);
+
+                var text; // set a new variable
+
+                // use a new variable for storing the errors during validation
+                error_message.style.padding = &quot;10px&quot;;
+                error_message.style.display = &quot;block&quot;
+
+                // validation check begins
+
+                // check first name
+                if (!/^[A-Z][a-z]+$/.test(first_name))
+                {
+                    text = &quot;First name must contain only letters(at least two) and should begin with a capital letter. &quot; +
+                            &quot;No more capital letters are allowed.&quot;;
+                    error_message.innerHTML = text;
+                    return false;
+                }
+
+                // check last name
+                if (!/^[A-Z][a-z]+$/.test(last_name))
+                {
+                    text = &quot;Last name must contain only letters(at least two) and should begin with a capital letter. &quot; +
+                            &quot;No more capital letters are allowed.&quot;;
+                    error_message.innerHTML = text;
+                    return false;
+                }
+
+                // check username
+                if (!/^[A-Za-z0-9]{1,12}$/.test(username))
+                {
+                    text = &quot;Username length must be between 1 and 12 characters. Only alphabetic and numeric characters are allowed&quot;;
+                    error_message.innerHTML = text;
+                    return false;
+                }
+
+                // check password
+                if (password.length &lt; 4)
+                {
+                    text = &quot;Password consists of at least 4 characters!&quot;;
+                    error_message.innerHTML = text;
+                    return false;
+                }
+
+                // check age
+                if (!/^[0-9]+$/.test(age) || age &gt; 119 || age &lt;= 0)
+                {
+                    text = &quot;Age consist of positive integer numbers and is lower than or equal to 119!&quot;;
+                    error_message.innerHTML = text;
+                    return false;
+                }
+
+                // check AMKA
+                if (!/^\d{11}$/.test(AMKA))
+                {
+                    text = &quot;AMKA should be a 11-digit number!&quot;;
+                    error_message.innerHTML = text;
+                    return false;
+                }
+
+                error_message.style.display = &quot;none&quot;
+                return true; // everything is fine, no errors occurred
+            }
+
+        &lt;/script&gt;
+
+    &lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>user</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-9">Loosely Scoped Cookie</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost:8080/Ergasia2_war/login.jsp</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes">WSTG-v42-SESS-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A08_2021-Software_and_Data_Integrity_Failures/">OWASP_2021_A08</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Cookies can be scoped by domain or path. This check is only concerned with domain scope.The domain scope applied to a cookie determines which domains can access it. For example, a cookie can be scoped strictly to a subdomain e.g. www.nottrusted.com, or loosely scoped to a parent domain e.g. nottrusted.com. In the latter case, any subdomain of nottrusted.com can access the cookie. Loosely scoped cookies are common in mega-applications like google.com and live.com. Cookies set from a subdomain like app.foo.bar are transmitted only to that domain by the browser. However, cookies scoped to a parent-level domain may be transmitted to the parent, or any subdomain of the parent.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>The origin domain used for comparison was: </p>
+
+<p>localhost</p>
+
+<p>JSESSIONID=1E0D658A245EF81F176F147902AC2639</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (266 bytes)</summary>
+				
+				<pre><code>GET http://localhost:8080/Ergasia2_war/login.jsp HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:105.0) Gecko/20100101 Firefox/105.0
+Pragma: no-cache
+Cache-Control: no-cache
+Referer: http://localhost:8080/Ergasia2_war/
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (201 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200
+Set-Cookie: JSESSIONID=1E0D658A245EF81F176F147902AC2639; Path=/Ergasia2_war; HttpOnly
+Content-Type: text/html;charset=UTF-8
+Content-Length: 6511
+Date: Thu, 12 Jan 2023 15:40:02 GMT
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (6511 bytes)</summary>
+				
+				<pre><code>&lt;!-- This is the sign-up page. Using this page, patients are now able to sign-up to the application. --&gt;
+
+&lt;!DOCTYPE html&gt;
+
+&lt;html lang=&quot;en&quot;&gt;
+
+    &lt;head&gt;
+
+        
+
+        &lt;h1&gt;&lt;/h1&gt; &lt;!-- Show the above initialized message --&gt;
+
+        &lt;title&gt;Doctor appointments: login&lt;/title&gt;
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+
+        &lt;style&gt;
+
+            /* style rules for the paragraph in this page */
+            p
+            {
+                color:white;
+                font-size:20px;
+                padding: 10px 18px;
+                margin: 8px 0;
+                width: auto;
+            }
+
+            /* set border and background colour to the form */
+            form
+            {
+                border: 3px solid whitesmoke;
+                background-color: white ;
+            }
+
+            /* the whole page has the same font */
+            *
+            {
+                font-family:candara;
+            }
+
+            /* style rules for the body of the page */
+            body
+            {
+                background-color: seagreen;
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+            }
+
+            /* set styles for the inputs of the login form */
+            input[type=text],
+            input[type=password]
+            {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                box-sizing: border-box;
+                border:1px solid mediumseagreen;
+            }
+
+            /* set a style for the buttons */
+            button
+            {
+                background-color: mediumseagreen;
+                color: white;
+                padding: 10px 18px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: auto;
+            }
+
+            /* set a hover effect for the button */
+            button:hover
+            {
+                opacity: 0.8;
+            }
+
+            /* set extra style for the cancel button */
+            .cancelbtn
+            {
+                width: auto;
+                padding: 10px 18px;
+                background-color: #f44336;
+            }
+
+            /* centre the display image inside the container */
+            .imgcontainer
+            {
+                text-align: center;
+                margin: 24px 0 12px 0;
+            }
+
+            /* set image properties */
+            img.avatar
+            {
+                width: 16%;
+                border-radius: 70%;
+            }
+
+            /* set padding to the container */
+            .container
+            {
+                padding: 16px;
+            }
+
+            /* set the forgot password text */
+            span.psw
+            {
+                float: right;
+                padding-top: 16px;
+            }
+
+            /* style rules for the radio buttons */
+            input[type=radio] {
+                height: 16px;
+                width: 15px;
+            }
+
+            /* set styles for span and cancel button on small screens */
+            @media screen and (max-width: 300px)
+            {
+                span.psw
+                {
+                    display: block;
+                    float: none;
+                }
+
+                .cancelbtn
+                {
+                    width: 100%;
+                }
+            }
+
+            /* style rules when hyperlinks are pressed */
+            a:visited
+            {
+                color: #012A6C;
+            }
+
+            /* style the hyperlinks in the nav section */
+            a
+            {
+                font-size:16px;
+                color: #012A6C;
+            }
+
+        &lt;/style&gt;
+
+    &lt;/head&gt;
+
+
+
+    &lt;body&gt;
+
+        &lt;form action=&quot;&quot; method=&quot;post&quot; name=&quot;login&quot; id=&quot;login&quot;&gt;
+
+            &lt;input type=&quot;hidden&quot; name=&quot;admin_action&quot; value=&quot;login&quot;&gt;
+            &lt;input type=&quot;hidden&quot; name=&quot;patient_action&quot; value=&quot;6&quot;&gt;
+            &lt;input type=&quot;hidden&quot; name=&quot;doctor_action&quot;  value=&quot;login&quot;&gt;
+
+            &lt;div class=&quot;imgcontainer&quot;&gt;
+                &lt;img src=&quot;img/logo1.png&quot; alt=&quot;logo_image&quot; class=&quot;avatar&quot;&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;container&quot;&gt;
+                &lt;label&gt;&lt;b style=&quot;color:#012A6C&quot;&gt;Username: *&lt;/b&gt;&lt;/label&gt;
+                &lt;input type=&quot;text&quot; placeholder=&quot;Enter Username&quot; name=&quot;username&quot; required&gt;
+
+                &lt;label&gt;&lt;b style=&quot;color:#012A6C&quot;&gt;Password: *&lt;/b&gt;&lt;/label&gt;
+                &lt;input type=&quot;password&quot; placeholder=&quot;Enter Password&quot; name=&quot;password&quot; required&gt;
+
+                &lt;label&gt;&lt;b style=&quot;color:#012A6C&quot;&gt;Category: *&lt;/b&gt;&lt;/label&gt;
+                &lt;input type=&quot;radio&quot; id=&quot;Admin&quot;   name=&quot;category&quot; value=&quot;Admin&quot;   required onchange=&quot;AdminAction();&quot; &gt;&lt;label for=&quot;Admin&quot;&gt;Admin&lt;/label&gt;
+                &lt;input type=&quot;radio&quot; id=&quot;Patient&quot; name=&quot;category&quot; value=&quot;Patient&quot; required onchange=&quot;PatientAction();&quot;&gt;&lt;label for=&quot;Patient&quot;&gt;Patient&lt;/label&gt;
+                &lt;input type=&quot;radio&quot; id=&quot;Doctor&quot;  name=&quot;category&quot; value=&quot;Doctor&quot;  required onchange=&quot;DoctorAction();&quot;&gt;&lt;label for=&quot;Doctor&quot;&gt;Doctor&lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;container&quot; style=&quot;background-color:#f1f1f1&quot;&gt;
+                &lt;button type=&quot;submit&quot;&gt;Login&lt;/button&gt;
+                &lt;button type=&quot;reset&quot; class=&quot;cancelbtn&quot;&gt;Reset&lt;/button&gt;
+                &lt;span class=&quot;psw&quot;&gt;Don&#39;t have an account yet? &lt;a href=&quot;register.jsp&quot;&gt;register&lt;/a&gt;&lt;/span&gt;
+            &lt;/div&gt;
+
+        &lt;/form&gt;
+
+        &lt;br&gt;
+    &lt;/body&gt;
+
+    &lt;script&gt;
+        const form = document.getElementById(&quot;login&quot;);
+
+        //functions that run after every radio button click.Depending on the radio button selected, the form action changes
+        //in order for the user to be redirected to the corresponding servlet
+        function AdminAction()
+        {
+            if (document.getElementById(&quot;Admin&quot;).checked)
+                form.action = &quot;admin&quot;;
+        }
+
+        function PatientAction()
+        {
+            if (document.getElementById(&quot;Patient&quot;).checked)
+                form.action = &quot;patient&quot;;
+        }
+
+        function DoctorAction()
+        {
+            if (document.getElementById(&quot;Doctor&quot;).checked)
+                form.action = &quot;doctor&quot;;
+        }
+    &lt;/script&gt;
+
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Always scope cookies to a FQDN (Fully Qualified Domain Name).</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-11">User Controllable HTML Element Attribute (Potential XSS)</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST http://localhost:8080/Ergasia2_war/login.jsp</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A03_2021-Injection/">OWASP_2021_A03</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A1_2017-Injection.html">OWASP_2017_A01</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>This check looks at user-supplied input in query string parameters and POST data to identify where certain HTML attribute values might be controlled. This provides hot-spot detection for XSS (cross-site scripting) that will require further review by a security analyst to determine exploitability.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p>
+
+<p></p>
+
+<p>http://localhost:8080/Ergasia2_war/login.jsp</p>
+
+<p></p>
+
+<p>appears to include user input in: </p>
+
+<p></p>
+
+<p>a(n) [form] tag [name] attribute </p>
+
+<p></p>
+
+<p>The user input found was:</p>
+
+<p>admin_action=login</p>
+
+<p></p>
+
+<p>The user-controlled value was:</p>
+
+<p>login</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (398 bytes)</summary>
+				
+				<pre><code>POST http://localhost:8080/Ergasia2_war/login.jsp HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:105.0) Gecko/20100101 Firefox/105.0
+Pragma: no-cache
+Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded
+Referer: http://localhost:8080/Ergasia2_war/login.jsp
+Content-Length: 96
+Cookie: JSESSIONID=1E0D658A245EF81F176F147902AC2639
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (96 bytes)</summary>
+				
+				<pre><code>admin_action=login&amp;patient_action=6&amp;doctor_action=login&amp;username=ZAP&amp;password=ZAP&amp;category=Admin</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (114 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200
+Content-Type: text/html;charset=UTF-8
+Content-Length: 6511
+Date: Thu, 12 Jan 2023 15:40:02 GMT
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (6511 bytes)</summary>
+				
+				<pre><code>&lt;!-- This is the sign-up page. Using this page, patients are now able to sign-up to the application. --&gt;
+
+&lt;!DOCTYPE html&gt;
+
+&lt;html lang=&quot;en&quot;&gt;
+
+    &lt;head&gt;
+
+        
+
+        &lt;h1&gt;&lt;/h1&gt; &lt;!-- Show the above initialized message --&gt;
+
+        &lt;title&gt;Doctor appointments: login&lt;/title&gt;
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+
+        &lt;style&gt;
+
+            /* style rules for the paragraph in this page */
+            p
+            {
+                color:white;
+                font-size:20px;
+                padding: 10px 18px;
+                margin: 8px 0;
+                width: auto;
+            }
+
+            /* set border and background colour to the form */
+            form
+            {
+                border: 3px solid whitesmoke;
+                background-color: white ;
+            }
+
+            /* the whole page has the same font */
+            *
+            {
+                font-family:candara;
+            }
+
+            /* style rules for the body of the page */
+            body
+            {
+                background-color: seagreen;
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+            }
+
+            /* set styles for the inputs of the login form */
+            input[type=text],
+            input[type=password]
+            {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                box-sizing: border-box;
+                border:1px solid mediumseagreen;
+            }
+
+            /* set a style for the buttons */
+            button
+            {
+                background-color: mediumseagreen;
+                color: white;
+                padding: 10px 18px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: auto;
+            }
+
+            /* set a hover effect for the button */
+            button:hover
+            {
+                opacity: 0.8;
+            }
+
+            /* set extra style for the cancel button */
+            .cancelbtn
+            {
+                width: auto;
+                padding: 10px 18px;
+                background-color: #f44336;
+            }
+
+            /* centre the display image inside the container */
+            .imgcontainer
+            {
+                text-align: center;
+                margin: 24px 0 12px 0;
+            }
+
+            /* set image properties */
+            img.avatar
+            {
+                width: 16%;
+                border-radius: 70%;
+            }
+
+            /* set padding to the container */
+            .container
+            {
+                padding: 16px;
+            }
+
+            /* set the forgot password text */
+            span.psw
+            {
+                float: right;
+                padding-top: 16px;
+            }
+
+            /* style rules for the radio buttons */
+            input[type=radio] {
+                height: 16px;
+                width: 15px;
+            }
+
+            /* set styles for span and cancel button on small screens */
+            @media screen and (max-width: 300px)
+            {
+                span.psw
+                {
+                    display: block;
+                    float: none;
+                }
+
+                .cancelbtn
+                {
+                    width: 100%;
+                }
+            }
+
+            /* style rules when hyperlinks are pressed */
+            a:visited
+            {
+                color: #012A6C;
+            }
+
+            /* style the hyperlinks in the nav section */
+            a
+            {
+                font-size:16px;
+                color: #012A6C;
+            }
+
+        &lt;/style&gt;
+
+    &lt;/head&gt;
+
+
+
+    &lt;body&gt;
+
+        &lt;form action=&quot;&quot; method=&quot;post&quot; name=&quot;login&quot; id=&quot;login&quot;&gt;
+
+            &lt;input type=&quot;hidden&quot; name=&quot;admin_action&quot; value=&quot;login&quot;&gt;
+            &lt;input type=&quot;hidden&quot; name=&quot;patient_action&quot; value=&quot;6&quot;&gt;
+            &lt;input type=&quot;hidden&quot; name=&quot;doctor_action&quot;  value=&quot;login&quot;&gt;
+
+            &lt;div class=&quot;imgcontainer&quot;&gt;
+                &lt;img src=&quot;img/logo1.png&quot; alt=&quot;logo_image&quot; class=&quot;avatar&quot;&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;container&quot;&gt;
+                &lt;label&gt;&lt;b style=&quot;color:#012A6C&quot;&gt;Username: *&lt;/b&gt;&lt;/label&gt;
+                &lt;input type=&quot;text&quot; placeholder=&quot;Enter Username&quot; name=&quot;username&quot; required&gt;
+
+                &lt;label&gt;&lt;b style=&quot;color:#012A6C&quot;&gt;Password: *&lt;/b&gt;&lt;/label&gt;
+                &lt;input type=&quot;password&quot; placeholder=&quot;Enter Password&quot; name=&quot;password&quot; required&gt;
+
+                &lt;label&gt;&lt;b style=&quot;color:#012A6C&quot;&gt;Category: *&lt;/b&gt;&lt;/label&gt;
+                &lt;input type=&quot;radio&quot; id=&quot;Admin&quot;   name=&quot;category&quot; value=&quot;Admin&quot;   required onchange=&quot;AdminAction();&quot; &gt;&lt;label for=&quot;Admin&quot;&gt;Admin&lt;/label&gt;
+                &lt;input type=&quot;radio&quot; id=&quot;Patient&quot; name=&quot;category&quot; value=&quot;Patient&quot; required onchange=&quot;PatientAction();&quot;&gt;&lt;label for=&quot;Patient&quot;&gt;Patient&lt;/label&gt;
+                &lt;input type=&quot;radio&quot; id=&quot;Doctor&quot;  name=&quot;category&quot; value=&quot;Doctor&quot;  required onchange=&quot;DoctorAction();&quot;&gt;&lt;label for=&quot;Doctor&quot;&gt;Doctor&lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;container&quot; style=&quot;background-color:#f1f1f1&quot;&gt;
+                &lt;button type=&quot;submit&quot;&gt;Login&lt;/button&gt;
+                &lt;button type=&quot;reset&quot; class=&quot;cancelbtn&quot;&gt;Reset&lt;/button&gt;
+                &lt;span class=&quot;psw&quot;&gt;Don&#39;t have an account yet? &lt;a href=&quot;register.jsp&quot;&gt;register&lt;/a&gt;&lt;/span&gt;
+            &lt;/div&gt;
+
+        &lt;/form&gt;
+
+        &lt;br&gt;
+    &lt;/body&gt;
+
+    &lt;script&gt;
+        const form = document.getElementById(&quot;login&quot;);
+
+        //functions that run after every radio button click.Depending on the radio button selected, the form action changes
+        //in order for the user to be redirected to the corresponding servlet
+        function AdminAction()
+        {
+            if (document.getElementById(&quot;Admin&quot;).checked)
+                form.action = &quot;admin&quot;;
+        }
+
+        function PatientAction()
+        {
+            if (document.getElementById(&quot;Patient&quot;).checked)
+                form.action = &quot;patient&quot;;
+        }
+
+        function DoctorAction()
+        {
+            if (document.getElementById(&quot;Doctor&quot;).checked)
+                form.action = &quot;doctor&quot;;
+        }
+    &lt;/script&gt;
+
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>admin_action</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Validate all input and sanitize output it before writing to any HTML attributes.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				  
+			</ol>
+		</section>
+
+		<section id="appendix" class="appendix">
+			<h2>Appendix</h2>
+
+			<section id="alert-types" class="alert-types">
+				<h3>Alert types</h3>
+				<p class="alert-types-intro">This section contains additional information on the types of alerts in the report.</p>
+				<ol>
+					<li
+						id="alert-type-0">
+						<h4>Absence of Anti-CSRF Tokens</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10202/">Absence of Anti-CSRF Tokens</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/352.html">352</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>9</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="http://projects.webappsec.org/Cross-Site-Request-Forgery">http://projects.webappsec.org/Cross-Site-Request-Forgery</a></li>
+										<li><a
+											href="http://cwe.mitre.org/data/definitions/352.html">http://cwe.mitre.org/data/definitions/352.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-1">
+						<h4>Content Security Policy (CSP) Header Not Set</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10038/">Content Security Policy (CSP) Header Not Set</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy">https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</a></li>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</a></li>
+										<li><a
+											href="http://www.w3.org/TR/CSP/">http://www.w3.org/TR/CSP/</a></li>
+										<li><a
+											href="http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html">http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</a></li>
+										<li><a
+											href="http://www.html5rocks.com/en/tutorials/security/content-security-policy/">http://www.html5rocks.com/en/tutorials/security/content-security-policy/</a></li>
+										<li><a
+											href="http://caniuse.com/#feat=contentsecuritypolicy">http://caniuse.com/#feat=contentsecuritypolicy</a></li>
+										<li><a
+											href="http://content-security-policy.com/">http://content-security-policy.com/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-2">
+						<h4>Missing Anti-clickjacking Header</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10020/">Anti-clickjacking Header</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1021.html">1021</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-3">
+						<h4>Application Error Disclosure</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/90022/">Application Error Disclosure</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							
+						</table>
+					</li>
+					<li
+						id="alert-type-4">
+						<h4>Cookie without SameSite Attribute</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10054/">Cookie without SameSite Attribute</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1275.html">1275</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site">https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-5">
+						<h4>Information Disclosure - Debug Error Messages</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10023/">Information Disclosure - Debug Error Messages</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							
+						</table>
+					</li>
+					<li
+						id="alert-type-6">
+						<h4>X-Content-Type-Options Header Missing</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10021/">X-Content-Type-Options Header Missing</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx">http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</a></li>
+										<li><a
+											href="https://owasp.org/www-community/Security_Headers">https://owasp.org/www-community/Security_Headers</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-7">
+						<h4>GET for POST</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10058/">GET for POST</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/16.html">16</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>20</td>
+							</tr>
+							
+						</table>
+					</li>
+					<li
+						id="alert-type-8">
+						<h4>Information Disclosure - Suspicious Comments</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10027/">Information Disclosure - Suspicious Comments</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							
+						</table>
+					</li>
+					<li
+						id="alert-type-9">
+						<h4>Loosely Scoped Cookie</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/90033/">Loosely Scoped Cookie</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/565.html">565</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://tools.ietf.org/html/rfc6265#section-4.1">https://tools.ietf.org/html/rfc6265#section-4.1</a></li>
+										<li><a
+											href="https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html">https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html</a></li>
+										<li><a
+											href="http://code.google.com/p/browsersec/wiki/Part2#Same-origin_policy_for_cookies">http://code.google.com/p/browsersec/wiki/Part2#Same-origin_policy_for_cookies</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-10">
+						<h4>User Agent Fuzzer</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10104/">User Agent Fuzzer</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://owasp.org/wstg">https://owasp.org/wstg</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-11">
+						<h4>User Controllable HTML Element Attribute (Potential XSS)</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10031/">User Controllable HTML Element Attribute (Potential XSS)</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/20.html">20</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>20</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute">http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+				</ol>
+			</section>
+		</section>
+		 
+	</main>
+</body>
+</html>
+
+
+
