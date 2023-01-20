@@ -1,0 +1,1 @@
+https://www.infoworld.com/article/3304289/how-to-configure-tomcat-to-always-require-https.html
