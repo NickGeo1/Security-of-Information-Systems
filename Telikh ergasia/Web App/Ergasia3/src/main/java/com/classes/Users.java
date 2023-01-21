@@ -185,14 +185,29 @@ public class Users
                 }
 
                 //check if there is any doctor who has the same given AMKA or username
-                statement = connection.prepareStatement("SELECT * FROM doctor WHERE doctorAMKA=?");
+                statement = connection.prepareStatement("SELECT * FROM doctor WHERE doctorAMKA=? OR username=?");
                 statement.setString(1, ((Patient)this).getAMKA());
+                statement.setString(2, username);
 
                 rs = statement.executeQuery();
 
                 if (rs.next()) //if there is any, we call the Fail function with the corresponding reason
                 {
-                    Fail(response, "This AMKA is already taken by a Doctor!", register_page);
+                    Fail(response, "This username/AMKA is already taken!", register_page);
+                    rs.close();
+                    connection.close();
+                    return;
+                }
+
+                //check if there is any admin who has the same given username
+                statement = connection.prepareStatement("SELECT * FROM admin WHERE username=?");
+                statement.setString(1, username);
+
+                rs = statement.executeQuery();
+
+                if (rs.next()) //if there is any, we call the Fail function with the corresponding reason
+                {
+                    Fail(response, "This username/AMKA is already taken!", register_page);
                     rs.close();
                     connection.close();
                     return;
@@ -234,14 +249,29 @@ public class Users
                 }
 
                 //check if there is any patient who has the same given AMKA or username
-                statement = connection.prepareStatement("SELECT * FROM patient WHERE patientAMKA=?");
+                statement = connection.prepareStatement("SELECT * FROM patient WHERE patientAMKA=? OR username = ?");
                 statement.setString(1, ((Doctor)this).getAMKA());
+                statement.setString(2, username);
 
                 rs = statement.executeQuery();
 
                 if (rs.next()) //if there is any, we call the Fail function with the corresponding reason
                 {
-                    Fail(response, "This AMKA is already taken by a Patient!", register_page);
+                    Fail(response, "This username/AMKA is already taken!", register_page);
+                    rs.close();
+                    connection.close();
+                    return;
+                }
+
+                //check if there is any admin who has the same given username
+                statement = connection.prepareStatement("SELECT * FROM admin WHERE username=?");
+                statement.setString(1, username);
+
+                rs = statement.executeQuery();
+
+                if (rs.next()) //if there is any, we call the Fail function with the corresponding reason
+                {
+                    Fail(response, "This username/AMKA is already taken!", register_page);
                     rs.close();
                     connection.close();
                     return;
@@ -271,10 +301,12 @@ public class Users
             }
             else //Else, an Admin object(via Admin method) calls the register method
             {
-                //check if there is any other admin who has the given username
-                selectquery = "SELECT * FROM admin WHERE username=?";
+                //check if there is any other user who has the given username
+                selectquery = "SELECT * FROM admin,doctor,patient WHERE admin.username=? OR doctor.username = ? OR patient.username = ?";
                 statement = connection.prepareStatement(selectquery);
                 statement.setString(1, this.getUsername());
+                statement.setString(2, this.getUsername());
+                statement.setString(3, this.getUsername());
 
                 rs = statement.executeQuery();
 

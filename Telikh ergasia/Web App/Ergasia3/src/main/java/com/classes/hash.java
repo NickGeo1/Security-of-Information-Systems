@@ -52,20 +52,6 @@ public class hash
         {
             messageDigest = MessageDigest.getInstance("MD5");
 
-//            Class.forName("com.mysql.jdbc.Driver");
-//            Connection con= DriverManager.getConnection(
-//                    "jdbc:mysql://localhost:3306/doctorappointment","root","test123");
-//
-//            System.out.println("edww");
-            //Connection con = datasource.getConnection();
-
-//            PreparedStatement st = con.prepareStatement("UPDATE doctor SET salt=?, hashedpassword=? WHERE username=doctor3");
-//            st.setString(1,salt);
-//            st.setString(2,password);
-//            st.execute();
-//
-//            con.close();
-
         } catch (Exception ex)
         {
             System.out.println(ex.toString());
